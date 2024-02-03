@@ -1,0 +1,74 @@
+<!-- cgpa-calculator.component.html -->
+<div class="header text-center">
+   
+    <img src="assets/head.png" alt="Logo">
+    <hr>
+  
+</div>
+
+
+<div class="container">
+<div class="row">
+<div class="text-center">
+    <h1>MAKAUT CGPA CALCULATOR</h1>
+    <h2>Enter marks of all 8 semesters to calculate your CGPA.</h2>
+    
+
+</div>
+
+    
+</div>
+
+</div>
+
+<table cellspacing="1px">
+    <tr>
+        <th>Semester 1:</th>
+        <td><input type="number" id="Text1" min="1" max="10" required [(ngModel)]="semesters[0]" (input)="clearResult()"></td>
+        <th>Semester 2:</th>
+        <td><input type="number" id="Text2" min="1" max="10" required [(ngModel)]="semesters[1]" (input)="clearResult()"></td>
+    </tr>
+    <tr>
+        <th>Semester 3:</th>
+        <td><input type="number" id="Text3" min="1" max="10" required [(ngModel)]="semesters[2]" (input)="clearResult()"></td>
+        <th>Semester 4:</th>
+        <td><input type="number" id="Text4" min="1" max="10" required [(ngModel)]="semesters[3]" (input)="clearResult()"></td>
+    </tr>
+    <tr>
+        <th>Semester 5:</th>
+        <td><input type="number" id="Text5" min="1" max="10" required [(ngModel)]="semesters[4]" (input)="clearResult()"></td>
+        <th>Semester 6:</th>
+        <td><input type="number" id="Text6" min="1" max="10" required [(ngModel)]="semesters[5]" (input)="clearResult()"></td>
+    </tr>
+    <tr>
+        <th>Semester 7:</th>
+        <td><input type="number" id="Text7" min="1" max="10" required [(ngModel)]="semesters[6]" (input)="clearResult()"></td>
+        <th>Semester 8:</th>
+        <td><input type="number" id="Text8" min="1" max="10" required [(ngModel)]="semesters[7]" (input)="clearResult()"></td>
+    </tr>
+</table>
+
+<div class="result" [ngStyle]="{ 'color': resultColor }">{{ result }}</div>
+
+<div class="text-center">
+    <button class="btn calculate" (click)="calculate()">Calculate</button>
+    <button class="btn reset" (click)="clearFields()">Reset</button>
+    
+</div>
+
+<footer>
+        <h5>Author: &copy; Somnath Pramanik <br>
+        <div class="link">Click Here : <a href="https://github.com/Drobow">Github</a></div></h5>
+    </footer>
+
+
+<audio #alertSound>
+    <source src="assets/alert.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<audio #confirmSound>
+    <source src="assets/confirm.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+

@@ -1,0 +1,96 @@
+body {
+    background-color: red;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.header img {
+    height: 75px;
+}
+
+.header hr {
+    border-color: #444;
+    border-width: 5px;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+    background-color: wheat;
+    border: 2px solid red;
+}
+
+th, td {
+    padding: 38px;
+    border: 10px solid brown;
+}
+
+th {
+    background-color: #666;
+    color: #fff;
+}
+
+input[type="number"] {
+    width: 70px;
+    padding: 7px;
+    border: 1px solid red;
+}
+
+
+.btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    background-color:blue; /* Blue button background color */
+    color: #fff; /* White button text color */
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: red; /* Darker blue color on hover */
+}
+
+.text-center{
+    text-align: center;
+}
+footer {
+	text-align: center;
+	padding: 3px;
+	background-color:black;
+	color: white;
+}
+.result {
+    margin-top: 10px;
+    color: #333;
+    text-align: center; /* Center-align the text */
+}
+.text-center{
+    color: red;
+}
+.calculate {
+    background-color: darkslateblue;
+    width: 150px;
+    font-size: 20px;
+    border:none;
+    color:white;
+    border-radius: 5px;
+} 
+.calculate:hover {
+    background-color: darkslateblue;
+}
+.reset
+{
+	background-color: red;
+    width: 150px;
+    font-size: 20px;
+    border:none;
+    color:white;
+    border-radius: 5px;
+}
+.reset:hover{
+	background-color: red;
+}

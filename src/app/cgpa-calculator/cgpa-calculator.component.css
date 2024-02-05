@@ -27,7 +27,7 @@ table {
 
 th, td {
     padding: 38px;
-    border: 10px solid brown;
+    border: 10px solid black;
 }
 
 th {
@@ -47,7 +47,7 @@ input[type="number"] {
     margin-top: 10px;
     border: none;
     background-color:blue; /* Blue button background color */
-    color: #fff; /* White button text color */
+    color:rebeccapurple; /* White button text color */
     cursor: pointer;
 }
 .btn:hover {
@@ -69,7 +69,7 @@ footer {
     text-align: center; /* Center-align the text */
 }
 .text-center{
-    color: red;
+    color: black;
 }
 .calculate {
     background-color: darkslateblue;

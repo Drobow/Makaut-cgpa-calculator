@@ -15,7 +15,8 @@ export class CgpaCalculatorComponent implements OnInit {
   resultColor: string = '';
 
   ngOnInit() {
-    // You can preload the audio here if needed
+    // // You can preload the audio here if needed
+    window.addEventListener('contextmenu', this.disableRightClick.bind(this));
   }
 
   calculate() {
@@ -52,4 +53,9 @@ export class CgpaCalculatorComponent implements OnInit {
     const confirmSound = this.confirmSoundRef.nativeElement;
     confirmSound.play();
   }
+  disableRightClick(event: MouseEvent) {
+    event.preventDefault(); // Prevent default context menu behavior
+    alert('Right-click is disabled for security reasons.');
+  }
+
 }
